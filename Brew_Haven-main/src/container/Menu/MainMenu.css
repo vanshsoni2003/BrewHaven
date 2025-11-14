@@ -1,0 +1,63 @@
+.app__mainMenu {
+  display: flex;
+  flex-direction: column;
+  background: url(/src/assets/bg.png);
+  color: var(--color-golden);
+  justify-content: center;
+  align-items: center; /* Center the entire menu container */
+  width: 100%;
+}
+
+.app__mainMenu-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.app__mainMenu-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 60px; /* Adjust the gap between the items */
+  width: 80%;
+  justify-content: center; /* Center the grid items horizontally */
+}
+
+.app__mainMenu-section {
+  /* text-align: center; */
+}
+
+.app__mainMenu-heading {
+  font-family: var(--font-base);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.app__mainMenu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center; /* Center items within each section */
+  justify-content: center; /* Ensure items are centered vertically if needed */
+}
+
+.MenuItem {
+  text-align: center; /* Center the content of each MenuItem */
+  width: 100%; /* Ensure the items take full width in their grid cell */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .app__mainMenu-menu {
+    grid-template-columns: 1fr; /* Change to a single column layout on mobile */
+    width: 90%;
+  }
+
+  .app__mainMenu-heading {
+    font-size: 2rem; /* Adjust the font size for mobile */
+  }
+
+  .app__mainMenu-items {
+    gap: 0.5rem; /* Reduce the gap between items on mobile */
+  }
+}

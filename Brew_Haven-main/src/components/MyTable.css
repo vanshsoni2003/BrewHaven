@@ -1,0 +1,422 @@
+.my-table-table td.table-number-cell {
+  background: var(--color-golden, #dcca87);
+  color: #111;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 6px rgba(220,202,135,0.13);
+}
+/* Table Styles */
+.my-table-table-container {
+  overflow-x: auto;
+  margin-top: 24px;
+}
+
+.my-table-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(40, 40, 40, 0.98);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(220,202,135,0.10);
+  border: 1.5px solid var(--color-golden, #dcca87);
+}
+
+.my-table-table th, .my-table-table td {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 1.08rem;
+}
+
+.my-table-table th {
+  background: #222;
+  color: var(--color-golden, #dcca87);
+  font-family: var(--font-base), 'Cormorant Garamond', serif;
+  font-weight: 700;
+  border-bottom: 1.5px solid var(--color-golden, #dcca87);
+}
+
+.my-table-table td {
+  color: var(--color-white, #fff);
+  font-family: var(--font-alt), 'Open Sans', Arial, sans-serif;
+  border-bottom: 1px solid #333;
+}
+
+.my-table-booking-row:last-child td {
+  border-bottom: none;
+}
+
+/* Action Button Styles */
+
+.my-table-action-btn {
+  background: #dcca87;
+  color: #232323;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 22px;
+  font-size: 1rem;
+  font-family: var(--font-base), 'Cormorant Garamond', serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+  margin-right: 4px;
+  box-shadow: 0 2px 8px rgba(220,202,135,0.13);
+  letter-spacing: 0.03em;
+  outline: none;
+  border: 2px solid #dcca87;
+}
+.my-table-action-btn:focus {
+  border: 2px solid #b6a97c;
+  background: #fffbe6;
+  color: #232323;
+}
+.my-table-action-btn:hover {
+  background: #fffbe6;
+  color: #232323;
+  box-shadow: 0 4px 16px rgba(220,202,135,0.18);
+  border: 2px solid #dcca87;
+  filter: brightness(1.05);
+}
+.my-table-action-btn:active {
+  background: #b6a97c;
+  color: #232323;
+  box-shadow: 0 2px 8px rgba(220,202,135,0.18);
+}
+.my-table-action-btn:focus {
+  border: 2px solid var(--color-golden, #dcca87);
+  background: #353535;
+  color: #fff;
+}
+.my-table-action-btn:hover {
+  background: #353535;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(40,40,40,0.18);
+  border: 2px solid var(--color-golden, #dcca87);
+  filter: brightness(1.05);
+}
+.my-table-action-btn:active {
+  background: #111;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(40,40,40,0.18);
+}
+.my-table-action-btn:focus {
+  border: 2px solid var(--color-golden, #dcca87);
+  background: #fffbe6;
+  color: #111;
+}
+.my-table-action-btn:hover {
+  background: #fffbe6;
+  color: #111;
+  box-shadow: 0 4px 16px rgba(220,202,135,0.18);
+  border: 2px solid var(--color-golden, #dcca87);
+  filter: brightness(1.05);
+}
+.my-table-action-btn:active {
+  background: #e6d48a;
+  color: #111;
+  box-shadow: 0 2px 8px rgba(220,202,135,0.18);
+}
+
+.my-table-action-btn:hover {
+  background: #fffbe6;
+  color: #111;
+  box-shadow: 0 4px 16px rgba(220,202,135,0.18);
+}
+.my-table-cancel-btn {
+  background: #d7263d !important;
+  color: #fff !important;
+  border: 2px solid #d7263d !important;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(215,38,61,0.13);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s !important;
+}
+.my-table-cancel-btn:focus {
+  border: 2px solid #a81d2b !important;
+  background: #a81d2b !important;
+  color: #fff !important;
+}
+.my-table-cancel-btn:hover {
+  background: #fffbe6 !important;
+  color: #d7263d !important;
+  box-shadow: 0 4px 16px rgba(215,38,61,0.18);
+  border: 2px solid #d7263d !important;
+  filter: brightness(1.05);
+}
+.my-table-cancel-btn:active {
+  background: #a81d2b !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(215,38,61,0.18);
+}
+.my-table-cancel-btn:focus {
+  border: 2px solid #d7263d !important;
+  background: #232323 !important;
+  color: #fff !important;
+}
+.my-table-cancel-btn:hover {
+  background: #232323 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(40,40,40,0.18);
+  border: 2px solid #d7263d !important;
+  filter: brightness(1.05);
+}
+.my-table-cancel-btn:active {
+  background: #111 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(40,40,40,0.18);
+}
+.my-table-cancel-btn:focus {
+  border: 2px solid #d7263d !important;
+  background: #a81d2b !important;
+  color: #fff !important;
+}
+.my-table-cancel-btn:hover {
+  background: #a81d2b !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(215,38,61,0.18);
+  border: 2px solid #d7263d !important;
+  filter: brightness(1.05);
+}
+.my-table-cancel-btn:active {
+  background: #7a1620 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(215,38,61,0.18);
+}
+
+.my-table-cancel-btn:hover {
+  background: #a81d2b !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(215,38,61,0.18);
+}
+/* Modal Styles */
+.mytable-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mytable-modal {
+  background: #181818;
+  border-radius: 12px;
+  padding: 32px 28px 24px 28px;
+  min-width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 4px 32px rgba(220,202,135,0.18);
+  border: 1.5px solid var(--color-golden, #dcca87);
+  color: var(--color-white, #fff);
+  text-align: center;
+}
+
+.mytable-modal h3 {
+  color: var(--color-golden, #dcca87);
+  margin-bottom: 18px;
+  font-family: var(--font-base), 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+}
+
+.mytable-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.mytable-modal button {
+  background: #232323;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-family: var(--font-base), 'Cormorant Garamond', serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin: 0 6px;
+}
+.mytable-modal button:focus {
+  outline: 2px solid var(--color-golden, #dcca87);
+}
+.mytable-modal button:hover {
+  background: #353535;
+  color: #fff;
+}
+/* Highlight the 'Yes, Cancel' button in the cancel popup */
+.mytable-modal .mytable-modal-cancel-yes {
+  background: #d7263d;
+  color: #fff;
+  border: 2px solid #d7263d;
+  box-shadow: 0 2px 8px rgba(215,38,61,0.13);
+  font-weight: 700;
+}
+.mytable-modal .mytable-modal-cancel-yes:hover,
+.mytable-modal .mytable-modal-cancel-yes:focus {
+  background: #a81d2b;
+  color: #fff;
+  border: 2px solid #d7263d;
+}
+
+.mytable-modal button:hover {
+  background: var(--color-golden, #dcca87);
+  color: var(--color-black, #0c0c0c);
+}
+.mytable-cancel-btn {
+  background: #333 !important;
+  color: #dcca87 !important;
+}
+.mytable-cancel-btn:hover {
+  background: #222 !important;
+  color: #fff !important;
+}
+
+/* Popup Styles */
+.mytable-popup {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-golden, #dcca87);
+  color: var(--color-black, #0c0c0c);
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: var(--font-base), 'Cormorant Garamond', serif;
+  font-weight: 700;
+  z-index: 2000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  animation: mytable-popup-fade 0.3s;
+}
+
+@keyframes mytable-popup-fade {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.my-table-page {
+  max-width: 650px;
+  margin: 48px auto;
+  background: rgba(20, 20, 20, 0.98);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  padding: 40px 28px;
+  font-family: var(--font-alt), 'Open Sans', Arial, sans-serif;
+  border: 1.5px solid var(--color-golden, #dcca87);
+}
+
+.my-table-page h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--color-golden, #dcca87);
+  font-size: 2.3rem;
+  font-family: var(--font-base), 'Cormorant Garamond', serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+
+.my-table-booking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.my-table-booking-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(40, 40, 40, 0.98);
+  border-radius: 14px;
+  border: 1.5px solid var(--color-golden, #dcca87);
+  box-shadow: 0 2px 12px rgba(220,202,135,0.10);
+  padding: 22px 18px 16px 18px;
+  position: relative;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.my-table-booking-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 32px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.my-table-booking-label {
+  color: #b6a97c;
+  font-size: 1rem;
+  font-family: var(--font-alt), 'Open Sans', Arial, sans-serif;
+  margin-right: 6px;
+}
+
+.my-table-booking-value {
+  color: var(--color-white, #fff);
+  font-size: 1.13rem;
+  font-family: var(--font-base), 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+.my-table-booking-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.my-table-page input[type="date"] {
+  margin: 0 14px;
+  padding: 7px 12px;
+  border: 1px solid var(--color-golden, #dcca87);
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #222;
+  color: var(--color-golden, #dcca87);
+  font-family: var(--font-alt), 'Open Sans', Arial, sans-serif;
+  outline: none;
+  transition: border 0.2s;
+}
+.my-table-page input[type="date"]:focus {
+  border: 1.5px solid var(--color-golden, #dcca87);
+}
+
+.my-table-page button {
+  background: dcca87;
+  color: var(--color-white, #fff);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-family: var(--font-base), 'Cormorant Garamond', serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 8px;
+}
+.my-table-page button:hover {
+  background: var(--color-golden, #dcca87);
+  color: var(--color-black, #0c0c0c);
+}
+
+.my-table-page p {
+  text-align: center;
+  color: #b6a97c;
+  font-size: 1.15rem;
+  font-family: var(--font-alt), 'Open Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .my-table-page {
+    padding: 18px 4vw;
+  }
+  .my-table-page h2 {
+    font-size: 1.5rem;
+  }
+  .my-table-page li span {
+    font-size: 1rem;
+  }
+}

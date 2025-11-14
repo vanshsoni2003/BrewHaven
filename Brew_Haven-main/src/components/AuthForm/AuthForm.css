@@ -1,0 +1,101 @@
+/* Base styles for the form container */
+.auth-form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #DCCA87;
+}
+
+.auth-form-title {
+  font-family: var(--font-base);
+  color: var(--color-crimson);
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form label {
+  font-family: var(--font-alt);
+  color: var(--color-golden);
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: var(--font-alt);
+  box-sizing: border-box;
+}
+
+.auth-form-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--color-crimson);
+  /* color:  #DCCA87; */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: var(--font-base);
+  transition: background-color 0.3s ease;
+  font-weight: bolder;
+}
+
+.auth-form-footer {
+  text-align: center;
+  font-family: var(--font-alt);
+  color: var(--color-white);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.auth-form-link {
+  color: var(--color-crimson);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-form-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  .auth-form-container {
+    padding: 2.5rem;
+  }
+
+  .auth-form-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .auth-form label {
+    font-size: 14px;
+  }
+
+  .auth-form input,
+  .auth-form-button {
+    font-size: 14px;
+  }
+}
+.auth-form-error {
+  color: red;  /* Change this to your preferred color */
+  font-weight: bold;  /* Optional: makes the error text bold */
+  margin-top: 10px;  /* Optional: add some spacing above the error message */
+}
+
